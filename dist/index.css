@@ -1,0 +1,18 @@
+.input-label p {
+  position: relative;
+}
+.input-label p::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: gray;
+  transition: 0.2s all;
+}
+.input-label:focus-within p::after {
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

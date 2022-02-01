@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Animal Battle Simulator</title>
+        <link rel='stylesheet' href='./styles.css'>
+        <link rel='stylesheet' href='./index.css'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src='../scripts/index.js'></script>
+    </head>
+    <body class="bg-gray flex flex-col items-center" >
+        <div class='flex flex-row justify-center items-center border-b border-lightgray shadow-lg w-screen' >
+            <img src='./images/pets_black_24dp.svg' class='h-12 w-12 border border-lightgray p-px m-5 rounded shadow-lg' />
+            <h1 class='text-white text-4xl font-title'>Animal Battle Simulator</h1>
+        </div>
+        <div class='text-white flex flex-row justify-center items-center w-min h-80'>
+            <div class='flex flex-col justify-center items-center m-6 p-6 border border-lightgray shadow-lg hover:shadow-2xl transition-all transition-200'>
+                <div class='flex flex-col items w-full pb-10 input-label'>
+                    <p class='font-body text-lg text-left mb-2 w-fit'>ANIMAL 1 </p>
+                    <select class='focus:outline-none p-1 font-body text-xs text-white bg-transparent border border-lightgray w-full' name='animal-1' id='animal-2'>
+                        <option class='bg-gray text-white font-body' value='lion'>Lion</option>
+                        <option class='bg-gray text-white font-body' value='gorilla'>Gorilla</option>
+                    </select>
+                </div>
+                <div class='flex flex-col items-start w-full input-label '>
+                    <p class='font-body text-lg text-left mb-2'>AMOUNT</p>
+                    <input value=1 placeholder="Amount" class='focus:outline-none p-1 text-white text-sm bg-transparent border border-lightgray' id='amt-1' type="number">
+                </div>
+            </div>
+            <div class='py-1 px-4 border border-lightgray shadow-lg' >
+                <h1 class='text-lg font-bold font-title'>VS</h1>
+            </div>
+            <div class='flex flex-col justify-center items-center m-6 p-6 border border-lightgray shadow-lg hover:shadow-2xl transition-all transition-200'>
+                <div class='flex flex-col items w-full pb-10 input-label'>
+                    <p class='font-body text-lg text-left mb-2 w-fit'>ANIMAL 2 </p>
+                    <select class='focus:outline-none p-1 font-body text-xs text-white bg-transparent border border-lightgray w-full' name='animal-2' id='animal-2'>
+                        <option class='bg-gray text-white font-body' value='lion'>Lion</option>
+                        <option class='bg-gray text-white font-body' value='gorilla'>Gorilla</option>
+                    </select>
+                </div>
+                <div class='flex flex-col items-start w-full input-label '>
+                    <p class='font-body text-lg text-left mb-2'>AMOUNT</p>
+                    <input value=1 placeholder="Amount" class='focus:outline-none p-1 text-white text-sm bg-transparent border border-lightgray' id='amt-2' type="number">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

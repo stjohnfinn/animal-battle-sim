@@ -1,0 +1,25 @@
+.input-label {
+
+    p {
+        position: relative;
+        
+        &::after {
+            content: '';
+            width: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            background-color: gray;
+            transition: 0.2s all;
+        }
+    }
+
+    &:focus-within {
+        p {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
