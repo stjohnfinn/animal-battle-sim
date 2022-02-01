@@ -11,7 +11,8 @@ module.exports = {
       white: '#FFFCF7',
       lightgray: 'gray',
       transparent: 'transparent',
-      pink: 'pink'
+      pink: 'pink',
+      purple: '#A020F0'
     }
   },
   plugins: [],
