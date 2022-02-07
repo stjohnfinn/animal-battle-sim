@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'title': 'Space Grotesk',
-      'body': 'Open Sans'
+      'body': 'Open Sans',
     },
     colors: {
       blue: '#2563eb',
